@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鉛直運動シミュレーター V3</title>
+    <title>鉛直運動シミュレーター</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 15px; color: #333; background-color: #f0f2f5; }
@@ -253,7 +253,7 @@
         document.getElementsByName('mode').forEach(r => r.addEventListener('change', () => {
             const m = document.querySelector('input[name="mode"]:checked').value;
             document.getElementById('y0').value = (m==='up') ? "0" : "0";
-            document.getElementById('v0').value = (m==='up') ? "30" : "0";
+            document.getElementById('v0').value = (m==='up') ? "29.4" : "0";
             resetSimulation();
         }));
 
